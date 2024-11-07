@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { createContext, useContext, ReactNode } from 'react';
 import useCurrentUser from '../hooks/use-current-user.hook';

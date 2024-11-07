@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
+//@ts-ignore
+import FlowCadencePlugin from "flow-cadence-plugin";
 
 const nextConfig: NextConfig = {
   webpack: (config) => {
-    config.module.rules.push({
-      test: /\.cdc$/,
-      loader: 'raw-loader',
-    });
+    config.plugins.push(new FlowCadencePlugin({
+      network: "mainnet",
+    }))
 
     return config;
   },
