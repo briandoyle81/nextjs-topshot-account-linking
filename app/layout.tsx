@@ -1,7 +1,6 @@
 'use client';
 import "./globals.css";
 import flowJSON from '../flow.json'
-
 import * as fcl from "@onflow/fcl";
 
 import AuthProvider from "./providers/AuthProvider";
