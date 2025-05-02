@@ -10,7 +10,7 @@ This demo showcases how to use **Flow Account Linking** to view **NBA Top Shot M
 
 ## 📸 Preview
 
-[Preview](./preview.png)
+![Preview](./preview.png)
 
 ---
 
