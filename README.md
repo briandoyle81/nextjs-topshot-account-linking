@@ -3,7 +3,7 @@
 This demo showcases how to use **Flow Account Linking** to view **NBA Top Shot Moments** from a user's **Dapper Wallet** using their **Flow Wallet** login. No asset transfers or separate Dapper login required.
 
 > ✅ Built with Next.js (App Router) + Flow FCL + Cadence  
-> 🔗 Try it live: [nextjs-topshot-account-linking.vercel.app](https://nextjs-topshot-account-linking.vercel.app)
+> 🔗 Try it live: [nextjs-topshot-account-linking.vercel.app](https://nextjs-topshot-account-linking.vercel.app)  
 > 🧠 Learn to build it: [Account Linking With NBA Top Shot](https://developers.flow.com/build/guides/account-linking-with-dapper)
 
 ---
