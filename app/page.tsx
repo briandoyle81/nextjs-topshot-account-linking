@@ -8,19 +8,37 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 sm:p-20 bg-gray-100 font-sans">
       <main className="flex flex-col gap-8 row-start-2 items-center w-full max-w-5xl px-12 py-12 bg-white rounded-lg shadow-lg border border-gray-200">
-        {/* Message visible for all users */}
-        <p className="text-center text-gray-700 mb-4">
-          Please link your Dapper wallet to view your NFTs. For more information, check the{" "}
-          <a
-            href="https://support.meetdapper.com/hc/en-us/articles/20744347884819-Account-Linking-and-FAQ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 underline"
-          >
-            Account Linking and FAQ
-          </a>.
-        </p>
-
+        <div className="w-full max-w-2xl mb-6 p-6 bg-blue-50 border border-blue-200 rounded-lg flex flex-col items-center shadow-sm">
+          <div className="flex items-center mb-2">
+            <svg className="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+            <span className="text-lg font-semibold text-black">
+              Please{' '}
+              <a
+                href="https://support.meetdapper.com/hc/en-us/articles/20744347884819-Account-Linking-and-FAQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline"
+              >
+                link your Dapper wallet
+              </a>{' '}
+              to view your NFTs.
+            </span>
+          </div>
+          <p className="text-black text-center text-sm">
+            Learn how to make this app by completing the{' '}
+            <a
+              href="https://developers.flow.com/build/guides/account-linking-with-dapper"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              tutorial
+            </a>
+            .
+          </p>
+        </div>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-6">
           {/* Display user address or linked NFTs if logged in */}
           {loggedIn ? (
@@ -29,7 +47,7 @@ export default function Home() {
             </div>
           ) : (
             <div className="text-lg font-semibold text-gray-800">
-              Please log in to view your linked NFTs.
+              After linking accounts, log in to view your linked NFTs.
             </div>
           )}
 
